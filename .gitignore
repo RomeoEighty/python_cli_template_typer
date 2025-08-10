@@ -1,5 +1,8 @@
+# Jython cache
+.jython_cache/
+
 # Byte-compiled / cache
-pycache/
+__pycache__/
 *.py[cod]
 *.pyo
 
@@ -14,3 +17,10 @@ build/
 # Test / coverage
 .pytest_cache/
 .coverage
+
+# Poetry export output (regeneratable)
+requirements.txt
+requirements-dev.txt
+
+# Poetry lock file (uncomment to ignore for library projects)
+# poetry.lock
