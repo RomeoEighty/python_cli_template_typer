@@ -17,5 +17,5 @@ def test_div_ok():
 def test_div_zero_rejected():
     r = runner.invoke(app, ["calc", "div", "1", "0"])
     # Typer/Click uses exit code 2 for BadParameter by default
-    assert r.exit_code != 0
-    assert "Divisor must be non-zero" in (r.stdout + r.stderr)
+    assert r.exit_code == 2
+    assert "Divisor must be non-zero" in r.stdout
