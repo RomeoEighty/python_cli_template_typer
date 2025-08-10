@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "python_cli_template_typer"
+version = "0.1.0"
+description = "A sample Typer CLI"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "python_cli_template_typer" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+typer = { version = ">=0.12.0", extras = ["all"] }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+black = "^24.4"
+mypy = "^1.10"
+
+# entry point (executed with `python_cli_template_typer` command)
+[tool.poetry.scripts]
+python_cli_template_typer = "python_cli_template_typer.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

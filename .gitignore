@@ -1,0 +1,16 @@
+# Byte-compiled / cache
+pycache/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Test / coverage
+.pytest_cache/
+.coverage
