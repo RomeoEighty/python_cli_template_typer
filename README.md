@@ -50,7 +50,7 @@ pip install .
 
 From a Git repository:
 ```bash
-pip install git+https://github.com/yourusername/mycli.git
+pip install git+https://github.com/yourusername/python_cli_template_typer.git
 ```
 
 From requirements.txt (exported from Poetry):
@@ -58,7 +58,7 @@ From requirements.txt (exported from Poetry):
 pip install -r requirements.txt
 ```
 
-After installation, the `mycli` command will be available in your shell (ensure your Python bin path is in `PATH`).
+After installation, the `python_cli_template_typer` command will be available in your shell (ensure your Python bin path is in `PATH`).
 
 ## Uninstall
 
@@ -69,11 +69,11 @@ poetry env remove python
 
 If you added it as a dependency to another Poetry project:
 ```bash
-poetry remove mycli
+poetry remove python_cli_template_typer
 ```
 
 If you installed it via pip:
 ```bash
-pip uninstall mycli
+pip uninstall python_cli_template_typer
 ```
 
